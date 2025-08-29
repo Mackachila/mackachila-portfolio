@@ -376,7 +376,7 @@ document.addEventListener('DOMContentLoaded', function() {
     productCategories.forEach(category => {
         category.addEventListener('click', function() {
             const categoryName = this.querySelector('h3').textContent;
-            showNotification(`Interested in ${categoryName}? pleas contact for more info!`, 'info');
+            showNotification(`Interested in ${categoryName}? please contact for more info!`, 'info');
         });
     });
 });
@@ -388,7 +388,7 @@ document.addEventListener('DOMContentLoaded', function() {
     courseCards.forEach(card => {
         card.addEventListener('click', function() {
             const courseName = this.querySelector('h3').textContent;
-            showNotification(`Interested in ${courseName}? pleas contact for more info!`, 'info');
+            showNotification(`Interested in ${courseName}? please contact for more info!`, 'info');
         });
         
         card.style.cursor = 'pointer';
@@ -649,4 +649,5 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
 
