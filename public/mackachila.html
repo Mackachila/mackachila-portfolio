@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mackachila Tech hub</title>
+    <link rel="stylesheet" href="beybos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Browse courses-->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-microchip"></i>
+                <span>Mackachila Expertise</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#resume-section" class="nav-link">CV/Resume</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#courses" class="nav-link">Courses</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="registration" class="nav-link" id="sign-up">Sign Up</a></li>
+                <li><a href="login" class="nav-link" id="log-in">Log in</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Carousel -->
+    <section id="home" class="hero">
+        <div class="carousel-container">
+            <div class="carousel-slide active">
+                <div class="slide-content">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')"></div>
+                    <div class="slide-text">
+                        <h1>Web Design and Software Engineering</h1>
+                        <p>Professional web design, maintanance and editing. Web applications and Software engineering.</p>
+                        <div class="slide-buttons">
+                            <a href="#projects" class="btn btn-primary">My Projects</a>
+                            <a href="#services" class="btn btn-secondary">My Services</a>
+                            <a href="#resume-section" class="btn btn-secondary">My CV/Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')"></div>
+                    <div class="slide-text">
+                        <h1>Learn from Industry Experts</h1>
+                        <p>Comprehensive computer courses designed to boost your career in technology</p>
+                        <div class="slide-buttons">
+                            <a href="#courses" class="btn btn-primary">View Courses</a>
+                            <a href="#contact" class="btn btn-secondary">Enroll Now</a>
+                            <a href="#resume-section" class="btn btn-secondary">My CV/Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1498049794561-7780e7231661?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')"></div>
+                    <div class="slide-text">
+                        <h1>Modern Cyber Cafe Experience</h1>
+                        <p>High-speed internet, modern workstations, and professional environment for all your digital needs</p>
+                        <div class="slide-buttons">
+                            <a href="#services" class="btn btn-primary">Book Now</a>
+                            <a href="#contact" class="btn btn-secondary">Get Pricing</a>
+                            <a href="#resume-section" class="btn btn-secondary">My CV/Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1540829917886-91ab031b1764?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')"></div>
+                    <div class="slide-text">
+                        <h1>Quality Electronics & Accessories</h1>
+                        <p>Premium computer hardware, accessories, and electronics from trusted brands</p>
+                        <div class="slide-buttons">
+                            <a href="#products" class="btn btn-primary">Shop Now</a>
+                            <a href="#contact" class="btn btn-secondary">Get Quote</a>
+                            <a href="#resume-section" class="btn btn-secondary">My CV/Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="carousel-indicators">
+            <button class="indicator active" data-slide="0"></button>
+            <button class="indicator" data-slide="1"></button>
+            <button class="indicator" data-slide="2"></button>
+            <button class="indicator" data-slide="3"></button>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Services</h2>
+                <p>Comprehensive technology solutions for education, business, and personal needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                       <i class="fas fa-laptop-code"></i>
+
+                    </div>
+                  <h3>Web Design</h3>
+                <p>Professional and modern Web design.</p>
+                <ul>
+                    <li>Responsive design</li>
+                    <li>Appealing UI/UX</li>
+                    <li>Full-Stack Development</li>
+                    <li>Secure sites</li>
+                    <li>SEO-friendly structure</li>
+                    <li>Accessibility compliance (WCAG)</li>
+                    <li>Cross-browser compatibility</li>
+                    <li>Optimized performance and loading speed</li>
+                    <li>Custom design tailored to brand identity</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Software Engineering</h3>
+                    <p>Modern software that suits your digital business needs</p>
+                    <ul>
+                        <li>Object-oriented programming (OOP)</li>
+                        <li>Data structures and algorithms</li>
+                        <li>Version control with Git</li>
+                        <li>Test-driven development (TDD)</li>
+                        <li>Agile and Scrum methodologies</li>
+                        <li>API design and integration</li>
+                        <li>Database design and management (SQL & NoSQL)</li>
+                        <li>Continuous integration/continuous deployment (CI/CD)</li>
+                        <li>Code review and collaboration</li>
+                        <li>Performance optimization and debugging</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>IT/ICT Training</h3>
+                    <p>Comprehensive computer courses designed to boost your career in technology</p>
+                    <ul>
+                        <li>Microsoft Office Suite (Word, Excel, PowerPoint, Outlook)</li>
+                        <li>Computer Fundamentals and Operating Systems</li>
+                        <li>Basic Troubleshooting and System Maintenance</li>
+                        <li>Introduction to Web Development (HTML, CSS, JavaScript)</li>
+                        <li>Working with Databases: Introduction to SQL and Database Concepts</li>
+                        <li>Introduction to Programming Concepts (Node.js, Python, JavaScript)</li>
+                        <li>Using Spreadsheets for Data Analysis and Visualization (Excel)</li>
+                        <li>Email, Calendar, and Collaboration Tools (Outlook, Teams, Google Workspace)</li>
+                        <li>Introduction to Networking and Internet Technologies</li>
+                        <li>Basics of Cybersecurity and Safe Computing Practices</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Myself.</h2>
+                    <p>Hi! My name is Jared Odhiambo (but you may as well call me Mackachila), a degree holder in BSC. Computer Science from Pwani University with a knack for creating excellent web products. My specializations are web design, web application development, and software engineering.
+
+                        I thrive on creating simple, responsive, and intuitive digital products that solve real-world problems. I have considerable experience in front-end and back-end technologies, and I enjoy building full-stack applications that are not only functional but also stunning to behold.
+
+                        I'm always eager to learn new technologies and master my craft, to deliver secure, efficient, and innovative software solutions.
+
+                        Feel free to explore my portfolio and don't hesitate to reach out if you'd like to work together or just say hello!</p>
+                    
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>300+</h3>
+                            <p>Students Trained</p>
+                        </div>
+                        <div class="stat">
+                            <h3>30+</h3>
+                            <p>Courses Offered</p>
+                        </div>
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>Satisfied Customers</p>
+                        </div>
+                        <div class="stat">
+                            <h3>3</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="mackachila.jpg" alt="Mackachila">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="projects" class="courses">
+        <div class="container">
+            <div class="section-header">
+                <h2>My projects</h2>
+                <p>Explore some of my projects. Dive into my expertise in web design and software engineering.</p>
+                <p>Pleas note that some feature of the system which require login will not be available at the view stage.</p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="dietmaster.png" alt="DietMaster">
+                    </div>
+                    <div class="course-content">
+                        <h3>DietMaster</h3>
+                        <p>DietMaster is a web app system designed for balaced diat recommendation for children of 5 years and below.
+                            The system is built using HTML, CSS, JavaScript for the front-end, and Node.js with Express for the back-end. It utilizes MySQL database for data storage and features user authentication, diet plan generation based on user input, and an admin panel for managing diet plans and users.
+                        </p>
+                        <div class="course-features"><a href="https://mackachila.github.io/DietmasterFinal/public/home.html">
+                            <span class="feature">Viw Project</span>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="neurocare.png" alt="Design">
+                    </div>
+                    <div class="course-content">
+                        <h3>NuroCare</h3>
+                        <p>NeuroCare is a web app that uses detailed and complex GPS technology to assist in locating people with dissabilities.
+                            The system is built using HTML, CSS, JavaScript for the front-end, and Node.js with Express for the back-end. It utilizes MySQL database for data storage and features user authentication.</p>
+                        
+                            <div class="course-features"><a href="https://mackachila.github.io/NeurocareFinal/public/index.html">
+                            <span class="feature">Viw Project</span>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="colledge.png" alt="Colledge">
+                    </div>
+                    <div class="course-content">
+                        <h3>College Management System</h3>
+                        <p>This is a web app system that fully and efficently manages a college.
+                            The system is built using HTML, CSS, JavaScript for the front-end, and Node.js with Express for the back-end. It utilizes MySQL database for data storage and features user authentication.
+                        </p>
+                        <div class="course-features">
+                            <span class="feature" style="background-color: red;">This Project is still private</span>
+                           
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Office">
+                    </div>
+                    <div class="course-content">
+                        <h3>Other projects are available</h3>
+                        <p>There are other project available in other different languages like Python, Java, and Django</p>
+                        <div class="course-features">
+                            <span class="feature">These will be updates soon</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <div class="section-header">
+                <h2>Courses</h2>
+                <p>Comprehensive training programs designed to advance your technology skills</p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Programming">
+                    </div>
+                    <div class="course-content">
+                        <h3>Programming & Development</h3>
+                        <p>Learn popular programming languages including Python, Java, JavaScript, and more</p>
+                        <div class="course-features">
+                            <span class="feature">3-6 Months</span>
+                            <span class="feature">Certificate</span>
+                            <span class="feature">Job Ready</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Design">
+                    </div>
+                    <div class="course-content">
+                        <h3>Graphic Design</h3>
+                        <p>Master design tools like Photoshop, Illustrator, and create stunning visual content</p>
+                        <div class="course-features">
+                            <span class="feature">2-4 Months</span>
+                            <span class="feature">Portfolio</span>
+                            <span class="feature">Creative</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Networking">
+                    </div>
+                    <div class="course-content">
+                        <h3>Network Administration</h3>
+                        <p>Learn network setup, security, troubleshooting, and system administration</p>
+                        <div class="course-features">
+                            <span class="feature">4-6 Months</span>
+                            <span class="feature">Hands-on</span>
+                            <span class="feature">Industry</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Office">
+                    </div>
+                    <div class="course-content">
+                        <h3>Microsoft Office Suite</h3>
+                        <p>Complete training in Word, Excel, PowerPoint, and other office applications</p>
+                        <div class="course-features">
+                            <span class="feature">1-2 Months</span>
+                            <span class="feature">Essential</span>
+                            <span class="feature">Practical</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+     <div class="resume-section" id="resume-section">
+        <div class="resume-section-header">
+            <h2 class="resume-section-title">Resume</h2>
+            <p class="resume-section-subtitle">View and download my professional resume</p>
+        </div>
+
+        <div class="resume-controls">
+            <button id="resume-view-btn" class="resume-btn resume-btn-primary">
+                <span>📄</span>
+                View my Resume
+            </button>
+        </div>
+
+        <div class="resume-loading" id="resume-loading">
+            <div class="resume-spinner"></div>
+            <p>Generating PDF...</p>
+        </div>
+
+        <div class="resume-viewer" id="resume-viewer">
+            <div class="resume-content" id="resume-content">
+                <!-- Resume Header -->
+                <div class="resume-header">
+                    <h1 class="resume-name">JARED ODHIAMBO</h1>
+                    <span class="resume-title-role" style="color: rgb(35, 34, 34); font-size: 12px;">(Bachelor of Science in Computer Science) Web design |Software Developer | Executive Virtual Assistant | Data Annotator/Labeler | Calendar Management | Inbox | Scheduling Meeting | Travel Bookings | Itineraries</span>
+                    <br><br><div class="resume-contact">
+                        <div class="resume-contact-item">
+                            <span>📧</span>
+                            <span>achilajared@gmail.com</span>
+                        </div>
+                        <div class="resume-contact-item">
+                            <span>📱</span>
+                            <span>+254704684936</span>
+                        </div>
+                        <div class="resume-contact-item">
+                            <span>📍</span>
+                            <span>Kilifi, Kilifi County Kenya</span>
+                        </div>
+                        <div class="resume-contact-item">
+                            <span> <i class="fab fa-linkedin"></i></span>
+                            <span> <a href="https://linkedin.com/in/jaredmackachila/" target="_blank">LinkedIn</a> </span>
+                        </div>
+                        <div class="resume-contact-item">
+                            <span><i class="fab fa-github"></i></span>
+                            <span><a href="https://github.com/mackachila" target="_blank">GitHub</a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professional Summary -->
+                <div class="resume-section-item">
+                    <h3 class="resume-section-heading">Professional Summary</h3>
+                    <p>
+                        Computer Science graduate from Pwani University with a strong foundation in web application development and a passion for software engineering. Skilled in designing and building responsive, user-centered web solutions using modern front-end and back-end technologies. Experienced in collaborative development environments, with a focus on clean code, scalability, and performance. Eager to contribute to innovative projects that solve real-world problems through technology.
+                    </p>
+                </div>
+
+                <!-- Education -->
+                <div class="resume-section-item">
+                    <h3 class="resume-section-heading">Education</h3>
+                    
+                    <div class="resume-education-item">
+                        <div class="resume-education-header">
+                            <div>
+                                <div class="resume-degree">Bachelor of Science in Computer Science</div>
+                                <div class="resume-school">Pwani University</div>
+                                <div class="resume-location">Kilifi, Kilifi County-Kenya</div>
+                            </div>
+                            <div class="resume-dates">Aug. 2021 – May 2025</div>
+                        </div>
+                       
+                    </div>
+                </div>
+                <!-- Work Experience -->
+                <div class="resume-section-item">
+                    <h3 class="resume-section-heading">Work Experience</h3>
+                    
+                    <div class="resume-job">
+                        <div class="resume-job-header">
+                            <div>
+                                <div class="resume-job-title">Data Labeler/Annotator</div>
+                                <div class="resume-company">FUZU LTD-Kenya.</div>
+                                <div class="resume-location">Remote</div>
+                            </div>
+                            <div class="resume-dates">April 2025 - Present</div>
+                        </div>
+                        <div class="resume-description">
+                            <ul>
+                                <li>Data labeling and annotation while paying keen attention to detail.</li>
+                             </ul>
+                        </div>
+                    </div>
+
+                    <div class="resume-job">
+                        <div class="resume-job-header">
+                            <div>
+                                <div class="resume-job-title">Intern/Industrial attachment - IT department</div>
+                                <div class="resume-company">Elgon View Technical and Vocational Training College, Migori-Kenya </div>
+                                <div class="resume-location">Migori Campus, Migori County-Kenya</div>
+                            </div>
+                            <div class="resume-dates">May 2024 – Aug. 2024</div>
+                        </div>
+                        <div class="resume-description">
+                            <ul>
+                                <li>Provided technical support in maintenance and troubleshooting hardware, software, and network-related issues.</li>
+                                <li>Installation and configuration of college systems.</li>
+                                <li>Integrated third-party payment systems (Stripe, PayPal) with fraud detection mechanisms</li>
+                                <li>Assisted staff in resolving IT concerns, ensuring seamless connectivity and communication.</li>
+                                <li>Set up and maintained workstations, telecommunication systems, and conference technologies.</li>
+                                <li>Maintenance and upgrade of college website. </li>
+                                <li>Maintained records of IT assets, user credentials, and system configurations.</li>
+                                <li>Training in IT-related courses e.g. web development technologies.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="resume-job">
+                        <div class="resume-job-header">
+                            <div>
+                                <div class="resume-job-title">Tutor – Trainer in ICT department </div>
+                                <div class="resume-company">Xplore Computer college </div>
+                                <div class="resume-location">Nairobi-Kenya</div>
+                            </div>
+                            <div class="resume-dates">April 2022 – Sept. 2022 </div>
+                        </div>
+                        <div class="resume-description">
+                            <ul>
+                                <li>Developed mobile-first web applications using HTML5, CSS3, and JavaScript ES6+</li>
+                                <li>Built RESTful APIs using Node.js framework</li>
+                                <li>Implemented real-time features using WebSocket technology and Socket.io</li>
+                                <li>Participated in agile development processes and daily standups</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <!-- Technical Skills -->
+                <div class="resume-section-item">
+                    <h3 class="resume-section-heading">Technical Skills</h3>
+                    <div class="resume-skills-grid">
+                        <div class="resume-skill-category">
+                            <h4>Programming Languages</h4>
+                            <div class="resume-skill-list">JavaScript, Python, Java, C++, SQL</div>
+                        </div>
+                        <div class="resume-skill-category">
+                            <h4>Frontend Technologies</h4>
+                            <div class="resume-skill-list">React, Vue.js, HTML5, CSS3, Bootstrap, Tailwind CSS</div>
+                        </div>
+                        <div class="resume-skill-category">
+                            <h4>Backend Technologies</h4>
+                            <div class="resume-skill-list">Node.js, Express.js, Django, Spring Boot.</div>
+                        </div>
+                        <div class="resume-skill-category">
+                            <h4>Databases</h4>
+                            <div class="resume-skill-list">PostgreSQL, MySQL.</div>
+                        </div>
+                        <div class="resume-skill-category">
+                            <h4>Cloud & DevOps</h4>
+                            <div class="resume-skill-list">AWS, Docker, GitLab CI.</div>
+                        </div>
+                        <div class="resume-skill-category">
+                            <h4>Productivity tools</h4>
+                            <div class="resume-skill-list"> Google Workspace (Gmail, Calendar, Drive, Docs, Sheets, Slides).</div>
+                        </div>
+                        <div class="resume-skill-category">
+                            <h4>Tools & Others</h4>
+                            <div class="resume-skill-list">Git, Slack, VS Code.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Key Projects -->
+                <div class="resume-section-item">
+                    <h3 class="resume-section-heading">Key Projects</h3>
+                    
+                    <div class="resume-project">
+                        <div class="resume-project-header">
+                            <div>
+                                <div class="resume-project-title">DietMaster – Web-Based Diet recommendation System </div>
+                                <div class="resume-project-tech"> HTML, Bootstrap, CSS, JavaScript, Node.js, MySQL database</div>
+                            </div>
+                            <div class="resume-dates">2024 - 2025</div>
+                        </div>
+                        <div class="resume-description">
+                            <ul>
+                                <li>Developed a web-based application that provides diet recommendations for children of 5 years and below.</li>
+                                <li>Implemented dynamism that provides personalized dynamic recommendations based on child’s health conditions, allergies, favorite meals and age. </li>
+                                <li>Designed a responsive and user-friendly UI that makes the system appealing and easy to use.</li>
+                                <li>A secure back-end implementation using Node.js framework ensuring maximum security for the user data.</li>
+                                <li>Incorporated a mechanism to allow users to delete their data at will in case of any security concerns.</li>
+                                <li>Implemented a mechanism to connect Doctors and other users like parents and caregivers for further consultations and reports on the system recommendations.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="resume-project">
+                        <div class="resume-project-header">
+                            <div>
+                                <div class="resume-project-title">NuroCare- Web-Based Real-time Analytics for patients</div>
+                                <div class="resume-project-tech">HTML, Bootstrap, CSS, JavaScript, Node.js, MySQL database</div>
+                            </div>
+                            <div class="resume-dates">2024 - 2025</div>
+                        </div>
+                        <div class="resume-description">
+                            <ul>
+                                <li>Built comprehensive analytics system with real-time data detection and visualization for patients living with dissabilities.</li>
+                                <li>Extensive use of detailed and complex GPS technology for the accuracy of exact and real time locations.</li>
+                                <li>Designed a responsive and user-friendly UI that makes the system appealing and easy to use.</li>
+                                <li>A secure back-end implementation using Node.js framework ensuring maximum security for the user data.</li>
+                                <li>Incorporated a mechanism to disable tracking users without their consent.</li>
+                                <li>Implemented a mechanism to connect Doctors, Caregivers and patients for assistant and emergency where necessary.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="resume-project">
+                        <div class="resume-project-header">
+                            <div>
+                                <div class="resume-project-title">College Management System</div>
+                                <div class="resume-project-tech">HTML, Bootstrap, CSS, JavaScript, Node.js, MySQL database</div>
+                            </div>
+                            <div class="resume-dates">2025</div>
+                        </div>
+                        <div class="resume-description">
+                            <ul>
+                                <li>Developed a web-based college management system that helps the college managers and staff to smoothly and efficiently run the college. </li>
+                                <li>Integrated user authentication for secure access and role-based permissions to ensure maximum security for sensitive data. </li>
+                                <li>Developed an interactive admin dashboard for efficient and proper management of the college based on privileges.</li>
+                                <li>Implemented a responsive and modern UI to enhance user experience across devices.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="resume-section-item">
+                    <h3 class="resume-section-heading">Certifications</h3>
+                    <ul>
+                        <li><strong>Front-End Web Pro-Development (ALX)</strong> (2025)</li>
+                        <li><strong>Full-Stack Web Pro-Development (Edureka)</strong> (2025)</li>
+                        <li><strong>Certified Virtual Assistant (ALX)</strong> (2025)</li>
+                        <li><strong>Professional Foundations in the digital Technology (ALX)</strong> (2025)</li>
+                    </ul>
+                </div>
+                <!-- Certifications -->
+                <div class="resume-section-item">
+                    <h3 class="resume-section-heading">Referees</h3>
+                    <ul>
+                        <li>
+                            <strong>MR. Austine Matunga - COD ICT department</strong>
+                            <p>Elgon View Technical and Vocational Training College.</p>
+                            <p>+254 791738766.</p>
+                        </li>
+
+                        <li>
+                            <strong>Dr. John Mbogoli - COD School of Pure and Applied Sciences </strong>
+                            <p>Pwani University.</p>
+                            <p>+254 722344310</p>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="resume-controls">
+                <button id="resume-hide-btn" class="resume-btn resume-btn-secondary">
+                    <span>🙈</span>
+                    Hide Resume
+                </button>
+                <button id="resume-download-btn" class="resume-btn resume-btn-success">
+                    <span>📥</span>
+                    Download PDF
+                </button>
+            </div>
+        </div>
+
+        <div id="resume-loading" style="display: none; text-align: center; margin-top: 1rem;">
+  <div class="spinner" style="margin-bottom: 0.5rem;"></div>
+  <p>Please wait while your resume is being generated...</p>
+</div>
+
+    </div>
+
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Products</h2>
+                <p>Quality electronics and computer accessories from trusted brands</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-category">
+                    <div class="category-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Desktop Computers</h3>
+                    <p>High-performance desktops for gaming, work, and education</p>
+                </div>
+                
+                <div class="product-category">
+                    <div class="category-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Laptops</h3>
+                    <p>Portable computing solutions for professionals and students</p>
+                </div>
+                
+                <div class="product-category">
+                    <div class="category-icon">
+                        <i class="fas fa-memory"></i>
+                    </div>
+                    <h3>Components</h3>
+                    <p>RAM, storage, processors, and other computer components</p>
+                </div>
+                
+                <div class="product-category">
+                    <div class="category-icon">
+                        <i class="fas fa-mouse"></i>
+                    </div>
+                    <h3>Accessories</h3>
+                    <p>Keyboards, mice, monitors, and other peripherals</p>
+                </div>
+                
+                <div class="product-category">
+                    <div class="category-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Devices</h3>
+                    <p>Smartphones, tablets, and mobile accessories</p>
+                </div>
+                
+                <div class="product-category">
+                    <div class="category-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Repair Services</h3>
+                    <p>Professional repair and maintenance services</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact me</h2>
+                <p>Get in touch for courses, services, or product inquiries</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Kilifi, Kilifi County, Kenya</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+254 704 684 936</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>achilajared@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Hours</h3>
+                            <p>Mon-Fri: 8:00 AM - 6:00 PM<br>Sat: 9:00 AM - 4:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Your Phone">
+                    </div>
+                    <div class="form-group">
+                        <select name="service" required>
+                            <option value="">Select Service Interest</option>
+                            <option value="design">Web design/Software Engineering</option>
+                            <option value="courses">Computer Courses</option>
+                            <option value="cyber">Cyber Cafe</option>
+                            <option value="electronics">Electronics Purchase</option>
+                            <option value="repair">Repair Services</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-microchip"></i>
+                        <span>Mackachila Expertise</span>
+                    </div>
+                    <p>Your trusted partner for technology education, services, and products in Kilifi.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#services">Web Design</a></li>
+                        <li><a href="#courses">Computer Courses</a></li>
+                        <li><a href="#services">Cyber Cafe</a></li>
+                        <li><a href="#products">Electronics Shop</a></li>
+                        <li><a href="#contact">Repair Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Popular Courses</h3>
+                    <ul>
+                        <li><a href="#courses">Programming</a></li>
+                        <li><a href="#courses">Web Design</a></li>
+                        <li><a href="#courses">Networking</a></li>
+                        <li><a href="#courses">Office Suite</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> Kilifi, Kenya</p>
+                        <p><i class="fas fa-phone"></i> +254704684936</p>
+                        <p><i class="fas fa-envelope"></i>achilajared@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mackachila Expertise. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <button id="scroll-to-top-btn" title="Go to top">↑</button>
+
+
+    <script src="beybos.js"></script>
+
+    <script>
+    class ResumeManager {
+        constructor() {
+            this.viewBtn = document.getElementById('resume-view-btn');
+            this.hideBtn = document.getElementById('resume-hide-btn');
+            this.downloadBtn = document.getElementById('resume-download-btn');
+            this.viewer = document.getElementById('resume-viewer');
+            this.loading = document.getElementById('resume-loading');
+            this.content = document.getElementById('resume-content');
+
+            this.initializeEventListeners();
+        }
+
+        initializeEventListeners() {
+            this.viewBtn.addEventListener('click', () => this.showResume());
+            this.hideBtn.addEventListener('click', () => this.hideResume());
+            this.downloadBtn.addEventListener('click', () => this.downloadPDF());
+        }
+
+        showResume() {
+            this.viewer.classList.add('resume-visible');
+            this.viewBtn.style.display = 'none';
+
+            setTimeout(() => {
+                this.viewer.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }, 100);
+        }
+
+        hideResume() {
+            this.viewer.classList.remove('resume-visible');
+            this.viewBtn.style.display = 'flex';
+
+            document.querySelector('.resume-section-header').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        async downloadPDF() {
+            this.showLoading();
+
+            try {
+                await document.fonts.ready;
+
+                const clonedContent = this.content.cloneNode(true);
+                const tempContainer = document.createElement('div');
+                tempContainer.style.position = 'absolute';
+                tempContainer.style.left = '-9999px';
+                tempContainer.style.top = '0';
+                tempContainer.style.width = '210mm';
+                tempContainer.style.minHeight = '297mm';
+                tempContainer.style.padding = '15mm'; // Reduced padding for tighter margins
+                tempContainer.style.background = 'white';
+                tempContainer.style.fontFamily = 'Arial, sans-serif';
+                tempContainer.style.fontSize = '14px'; // Increased font size
+                tempContainer.style.lineHeight = '1.5';
+                tempContainer.style.color = '#1f2937';
+                tempContainer.appendChild(clonedContent);
+                document.body.appendChild(tempContainer);
+
+                this.applyPDFStyles(clonedContent);
+
+                const canvas = await html2canvas(tempContainer, {
+                    scale: 2,
+                    useCORS: true,
+                    allowTaint: true,
+                    backgroundColor: '#ffffff'
+                });
+
+                document.body.removeChild(tempContainer);
+
+                const imgData = canvas.toDataURL('image/png');
+                const pdf = new jspdf.jsPDF('p', 'mm', 'a4');
+
+                const pageWidth = 210;
+                const pageHeight = 297;
+                const margin = 10;
+                const usableWidth = pageWidth - margin * 2;
+                const usableHeight = pageHeight - margin * 2;
+
+                const pxPerMm = canvas.width / usableWidth;
+                const totalHeightMm = canvas.height / pxPerMm;
+
+                let pageCount = Math.ceil(totalHeightMm / usableHeight);
+                let position = 0;
+
+                for (let i = 0; i < pageCount; i++) {
+                    const pageCanvas = document.createElement('canvas');
+                    const pageCtx = pageCanvas.getContext('2d');
+
+                    const sliceHeight = Math.min(canvas.height - (position * pxPerMm), usableHeight * pxPerMm);
+                    pageCanvas.width = canvas.width;
+                    pageCanvas.height = sliceHeight;
+
+                    pageCtx.drawImage(
+                        canvas,
+                        0, position * pxPerMm,
+                        canvas.width, sliceHeight,
+                        0, 0,
+                        canvas.width, sliceHeight
+                    );
+
+                    const pageImgData = pageCanvas.toDataURL('image/png');
+
+                    if (i > 0) pdf.addPage();
+                    pdf.addImage(
+                        pageImgData,
+                        'PNG',
+                        margin,
+                        margin,
+                        usableWidth,
+                        sliceHeight / pxPerMm
+                    );
+
+                    position += usableHeight;
+                }
+
+                pdf.save('Jared_Odhiambo.pdf');
+
+                
+            } catch (error) {
+                console.error('Error generating PDF:', error);
+                alert('Error generating PDF. Please try again.');
+            } finally {
+                this.hideLoading();
+            }
+        }
+
+        applyPDFStyles(element) {
+            const styles = {
+                fontSize: '14px',
+                lineHeight: '1.5',
+                color: '#1f2937'
+            };
+
+            const textElements = element.querySelectorAll('*');
+            textElements.forEach(el => {
+                Object.assign(el.style, styles);
+            });
+
+            const name = element.querySelector('.resume-name');
+            if (name) name.style.fontSize = '24px';
+
+            const roleTitle = element.querySelector('.resume-title-role');
+            if (roleTitle) roleTitle.style.fontSize = '16px';
+
+            const sectionHeadings = element.querySelectorAll('.resume-section-heading');
+            sectionHeadings.forEach(heading => {
+                heading.style.fontSize = '14px';
+                heading.style.color = '#6366f1';
+                heading.style.marginTop = '16px';
+                heading.style.marginBottom = '8px';
+            });
+
+            const jobTitles = element.querySelectorAll('.resume-job-title, .resume-degree, .resume-project-title');
+            jobTitles.forEach(title => {
+                title.style.fontSize = '12px';
+                title.style.fontWeight = '600';
+            });
+
+            const skillCategories = element.querySelectorAll('.resume-skill-category');
+            skillCategories.forEach(category => {
+                category.style.backgroundColor = '#f8fafc';
+                category.style.padding = '8px';
+                category.style.marginBottom = '8px';
+                category.style.border = '1px solid #e5e7eb';
+                category.style.borderRadius = '4px';
+            });
+        }
+
+        showLoading() {
+            this.loading.style.display = 'block';
+            this.downloadBtn.disabled = true;
+        }
+
+        hideLoading() {
+            this.loading.style.display = 'none';
+            this.downloadBtn.disabled = false;
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        new ResumeManager();
+    });
+</script>
+
+
+</body>
+</html>

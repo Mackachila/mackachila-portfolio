@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal - BeyBoss</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="studentportal.css">
+</head>
+<body>
+    <!-- Mobile Menu Toggle -->
+    <button id="mobileMenuToggle" class="mobile-menu-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <div class="profile-section">
+                <div class="profile-avatar">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face" alt="Profile" id="profileImage">
+                </div>
+                <div class="profile-info">
+                    <h3 id="studentName">John Doe</h3>
+                    <p id="studentId">ID: STU-2024-001</p>
+                    <p id="studentProgram">Computer Science</p>
+                </div>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav">
+            <div class="nav-section">
+                <h4>Academic</h4>
+                <ul>
+                    <li><a href="#" data-modal="courseaction"><i class="fas fa-book"></i> Add/Edit/Delete courses</a></li>
+                    <li><a href="#" data-modal="studentacction"><i class="fas fa-school"></i> Add/ Delete Student</a></li>
+                    <li><a href="#" data-modal="profile"><i class="fas fa-book"></i> Add/ DeleteTutor</a></li>
+                    <li><a href="#" data-modal="profile"><i class="fas fa-book"></i> Open/ Close Reg Windows</a></li>
+                    <li><a href="#" data-modal="academic-years"><i class="fas fa-calendar-alt"></i> Manage Academic Years</a></li>
+                    <li><a href="#" data-modal="unit-registration"><i class="fas fa-book"></i> Unit Registration</a></li>
+                    <li><a href="#" data-modal="semester-activation"><i class="fas fa-calendar-alt"></i> Semester Activation</a></li>
+                    <li><a href="#" data-modal="timetable"><i class="fas fa-clock"></i> Timetable</a></li>
+                    <li><a href="#" data-modal="grades"><i class="fas fa-chart-line"></i> Grades & Results</a></li>
+                    <li><a href="#" data-modal="assignments"><i class="fas fa-tasks"></i> Assignments</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-section">
+                <h4>Financial</h4>
+                <ul>
+                    <li><a href="#" data-modal="fee-payment"><i class="fas fa-credit-card"></i> Fee Payment</a></li>
+                    <li><a href="#" data-modal="fee-statement"><i class="fas fa-file-invoice"></i> Fee Statement</a></li>
+                    <li><a href="#" data-modal="scholarships"><i class="fas fa-award"></i> Scholarships</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-section">
+                <h4>Library & Resources</h4>
+                <ul>
+                    <li><a href="#" data-modal="library"><i class="fas fa-book-open"></i> Library</a></li>
+                    <li><a href="#" data-modal="resources"><i class="fas fa-download"></i> Resources</a></li>
+                    <li><a href="#" data-modal="e-books"><i class="fas fa-tablet-alt"></i> E-Books</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-section">
+                <h4>Communication</h4>
+                <ul>
+                    <li><a href="#" data-modal="announcements"><i class="fas fa-bullhorn"></i> Announcements</a></li>
+                    <li><a href="#" data-modal="messages"><i class="fas fa-envelope"></i> Messages</a></li>
+                    <li><a href="#" data-modal="support"><i class="fas fa-headset"></i> Support</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-section">
+                <h4>Settings</h4>
+                <ul>
+                    <li><a href="#" data-modal="settings"><i class="fas fa-cog"></i> Settings</a></li>
+                    <li><a href="#" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div id="mainContent" class="main-content">
+        
+        <header class="dashboard-header">
+            <h1>Welcome Back, <span id="headerName">John</span>!</h1>
+            <div class="header-actions">
+                <div class="notification-icon">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge">3</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="dashboard-grid">
+            <!-- Quick Stats -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Current Semester</h3>
+                        <p>Semester 6</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Registered Units</h3>
+                        <p>6 Units</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Current GPA</h3>
+                        <p>3.8</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Fee Balance</h3>
+                        <p>$2,500</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="activity-section">
+                <h2>Recent Activity</h2>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="activity-content">
+                            <h4>Assignment Submitted</h4>
+                            <p>Database Design Project - CS 301</p>
+                            <span class="activity-time">2 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="activity-content">
+                            <h4>Grade Updated</h4>
+                            <p>Web Development - CS 205 (A-)</p>
+                            <span class="activity-time">1 day ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-calendar"></i>
+                        </div>
+                        <div class="activity-content">
+                            <h4>Exam Scheduled</h4>
+                            <p>Software Engineering - CS 401</p>
+                            <span class="activity-time">3 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upcoming Events -->
+            <div class="events-section">
+                <h2>Upcoming Events</h2>
+                <div class="events-list">
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="date">25</span>
+                            <span class="month">Jul</span>
+                        </div>
+                        <div class="event-content">
+                            <h4>Mid-term Exams</h4>
+                            <p>CS 301, CS 205, CS 401</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="date">30</span>
+                            <span class="month">Jul</span>
+                        </div>
+                        <div class="event-content">
+                            <h4>Fee Payment Deadline</h4>
+                            <p>Semester 6 fees due</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="date">05</span>
+                            <span class="month">Aug</span>
+                        </div>
+                        <div class="event-content">
+                            <h4>Unit Registration</h4>
+                            <p>Next semester units</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Overlay -->
+    <div id="modalOverlay" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Modal Title</h3>
+                <button class="modal-close" id="modalClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Modal content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="api.js"></script> -->
+    <script src="portal.js"></script>
+    <!-- <script src="adminportal.js"></script> -->
+</body>
+</html>

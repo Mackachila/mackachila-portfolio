@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mackachila- Expertise</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="login.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Mackachila</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="mackachila" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Programs</a>
+                <a href="#" class="nav-link">About</a>
+                <a href="#" class="nav-link">Contact</a>
+                <a href="registration" class="nav-link nav-cta">Signup</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="content-container">
+            <div id="loading-overlay" class="loading-overlay">Please wait...
+            <div class="spinner"></div>
+            </div>
+            
+            <!-- Left Side - Carousel -->
+            <div class="carousel-section">
+                
+                <div class="carousel-container">
+                    <div class="carousel-slide active">
+                        <div class="slide-content">
+                            <div class="slide-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h3>Modern Computing</h3>
+                            <p>Learn cutting-edge technologies and programming languages that power today's digital world.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="slide-content">
+                            <div class="slide-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Expert Faculty</h3>
+                            <p>Learn from industry professionals with years of experience in software development and IT.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="slide-content">
+                            <div class="slide-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <h3>Career Ready</h3>
+                            <p>Graduate with practical skills and certifications that employers are actively seeking.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="slide-content">
+                            <div class="slide-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h3>Global Network</h3>
+                            <p>Join a community of students and alumni from around the world in the tech industry.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    <span class="indicator active" data-slide="0"></span>
+                    <span class="indicator" data-slide="1"></span>
+                    <span class="indicator" data-slide="2"></span>
+                    <span class="indicator" data-slide="3"></span>
+                </div>
+                Welcome to Mackachila Expertise Where technology meets innovation and precision. Please login to access your account.
+            </div>
+           
+
+            <!-- Right Side - Registration Form -->
+            <div class="form-section">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h2>Student Portal Login</h2>
+                        <p>Login to your Account</p>
+                    </div>
+                    
+                    <form class="registration-form" id="loginForm">
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="text" id="email" name="email">
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <div class="password-input">
+                                <input type="password" id="password" name="password">
+                                <button type="button" class="password-toggle" id="passwordToggle">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                            <span class="error-message" id="passwordError"></span>
+                        </div>
+
+                       
+                        <button type="submit" id="loginbtn" class="submit-btn">
+                            <span>Log in</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+
+                        <button type="submit" id="verificationbtn" class="submit-btn" style="display: none;">
+                            <span>Resend activation email</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        
+                        <div class="form-footer">
+                            <a href="/passwordreset">Forgot Password?</a>
+                            <p>Dont have an account? <a href="/registration">Register</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-microchip"></i>
+                        <span>Mackachila Expertise</span>
+                    </div>
+                    <p>Your trusted partner for technology education, services, and products in Kilifi.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#services">Web Design</a></li>
+                        <li><a href="#courses">Computer Courses</a></li>
+                        <li><a href="#services">Cyber Cafe</a></li>
+                        <li><a href="#products">Electronics Shop</a></li>
+                        <li><a href="#contact">Repair Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Popular Courses</h3>
+                    <ul>
+                        <li><a href="#courses">Programming</a></li>
+                        <li><a href="#courses">Web Design</a></li>
+                        <li><a href="#courses">Networking</a></li>
+                        <li><a href="#courses">Office Suite</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> Kilifi, Kenya</p>
+                        <p><i class="fas fa-phone"></i> +254704684936</p>
+                        <p><i class="fas fa-envelope"></i>achilajared@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mackachila Expertise. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="loginvalidation.js"></script>
+</body>
+</html>
